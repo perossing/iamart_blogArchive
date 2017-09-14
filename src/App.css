@@ -1,0 +1,27 @@
+.articleName {
+    list-style-type: none;
+    color: #c30;
+    line-height: 1.6em;
+}
+
+.articleName:hover {
+    color: skyblue;
+}
+
+.articleDisplay {
+    border: solid 1px #ccc;
+    width: 700px;
+    padding: 25px;
+    display: inline-block;
+}
+
+.scrollList {
+    border: solid 1px #ccc;
+    height: 150px;
+    width: 375px;
+    overflow-y: scroll;
+    position: absolute;
+    top: 50px;
+    left: 800px;
+
+}
