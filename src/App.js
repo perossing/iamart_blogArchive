@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import './App.css';
 import Article from './Components/Article';
+// import Preview from './Components/Preview';
 import ArticleList from './Components/ArticleList';
+import Tags from './Components/Tags';
 
 class App extends Component {
 constructor(props){
@@ -40,10 +42,17 @@ changeArticle(value){
 
   render() {
     return (
-      <div>          
-         <Article data={this.state.articleData.main} value={this.state.articleId}/>
-         <br />
-         <ArticleList data={this.state.articleData.main} value={this.state.articleId} onArticleSelection={this.changeArticle.bind(this)}/>
+      <div>
+        <p>
+            Intro text about iAMart and art materials articles ...
+        </p>
+        {/* <Preview data={this.state.articleData.main} value={this.state.articleId}/>        */}
+        <Article data={this.state.articleData.main} value={this.state.articleId}/>
+        <br />
+        <ArticleList data={this.state.articleData.main} value={this.state.articleId} onArticleSelection={this.changeArticle.bind(this)}/>
+        <div className="articleTags">
+        <Tags data={this.state.articleData.main}/>
+        </div>
       </div>
     );
   }

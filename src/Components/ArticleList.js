@@ -35,7 +35,6 @@ class ArticleList extends Component {
           titles[i].title=(articles[i].title)
         }
       let sortedTitles = titles.sort(sortByTitle);
-      console.log(sortedTitles)
       let articleId;
       var titleList = sortedTitles.map((article, i)=>{
         articleId = article.id;

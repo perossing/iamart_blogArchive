@@ -24,10 +24,7 @@ class Article extends Component {
     }
 
     return (
-      <div className="articleDisplay">
-        <p>
-            Intro text about iAMart and art materials articles ...
-        </p>
+      <div className="fullArticle">
         <h1>{title}</h1>
         <h3>{subtitle}</h3>
         <img src={image} alt={imageName} />
