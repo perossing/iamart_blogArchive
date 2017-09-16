@@ -1,24 +1,26 @@
 import React, { Component } from 'react';
 
 class Article extends Component {
-  constructor(props){
-    super(props);
-    this.state = {
-      articleNumber: props.value
-    }
-  }
-
 
   render() {
-    let index = this.props.value;
     if(this.props.data){
-      let article = this.props.data[index];
-      var title = article.title;
-      var subtitle = article.subtitle;
-      var image = 'images/'+ article.image;
-      var imageName = article.image
-      var content = article.content;
-      var author = article.author;
+      let currentArticle = {};
+      let articles = this.props.data;
+      let articleId = this.props.value;
+      
+      for (let i=0; i<Object.keys(articles).length; i++) {
+        let artId = articles[i].id;       
+        if (artId === articleId) {
+          currentArticle = this.props.data[i]         
+          break;
+        }
+      }
+      var title = currentArticle.title;
+      var subtitle = currentArticle.subtitle;
+      var image = 'images/'+ currentArticle.image;
+      var imageName = currentArticle.image
+      var content = currentArticle.content;
+      var author = currentArticle.author;
     }
 
     return (

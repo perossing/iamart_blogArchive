@@ -10,13 +10,13 @@ constructor(props){
   this.changeArticle = this.changeArticle.bind(this);
   this.state = {
     articleData:{},
-    articleId: 0
+    articleId: 1
   }
 }
 
 getArticles(){
   $.ajax({
-    url:'http://localhost:3000/AM-articles.json',
+    url:'AM-articles.json',
     dataType: 'json',
     cache: false,
     success: function(data){
@@ -50,4 +50,3 @@ changeArticle(value){
 }
 
 export default App;
-

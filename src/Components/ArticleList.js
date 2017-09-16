@@ -9,8 +9,8 @@ class ArticleList extends Component {
     }
   }
 
-  onClick(i){
-      this.setState({articleNumber: i}, function(){
+  onClick(articleId){
+      this.setState({articleNumber: articleId}, function(){
         this.handleChange();
      });
   }
@@ -20,10 +20,26 @@ class ArticleList extends Component {
   }
 
   render() {
-    if(this.props.data){
-      var articles = this.props.data;
-      var titleList = articles.map((article,i)=>{
-        return <li key={i} value={i} className="articleName" onClick={this.onClick.bind(this, i)}>{article.title}</li>
+    let sortByTitle = function(a,b){
+      if (a.title < b.title) return -1;
+      if (a.title > b.title) return 1;
+      return 0
+    }
+
+    if(this.props.data){ 
+      let articles = this.props.data;
+      let titles = [];
+        for (let i=0; i<Object.keys(articles).length; i++){
+          titles[i] = {}
+          titles[i].id=(articles[i].id)
+          titles[i].title=(articles[i].title)
+        }
+      let sortedTitles = titles.sort(sortByTitle);
+      console.log(sortedTitles)
+      let articleId;
+      var titleList = sortedTitles.map((article, i)=>{
+        articleId = article.id;
+        return <li key={i} className="articleName" onClick={this.onClick.bind(this, articleId)}>{article.title}</li>
       });
     }
 
