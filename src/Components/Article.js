@@ -19,7 +19,6 @@ class Article extends Component {
       var subtitle = currentArticle.subtitle;
       var image = 'images/'+ currentArticle.image;
       var imageName = currentArticle.image
-      // var content = currentArticle.content;
       var content = 'articletext/' + currentArticle.content;
       var author = currentArticle.author;
     }
@@ -30,8 +29,7 @@ class Article extends Component {
         <h3>{subtitle}</h3>
         <img src={image} alt={imageName} />
         <p className="author">author: {author}</p>
-        {/* <div dangerouslySetInnerHTML={{ __html: content}}></div> */}
-        <iframe className="articleFrame" src={content}></iframe>
+        <iframe className="articleFrame" src={content} title="articles"></iframe>
       </div>
     );
   }

@@ -2,9 +2,7 @@ import React, { Component } from 'react';
 import $ from 'jquery';
 import './App.css';
 import Article from './Components/Article';
-// import Preview from './Components/Preview';
 import ArticleList from './Components/ArticleList';
-import Tags from './Components/Tags';
 
 class App extends Component {
 constructor(props){
@@ -49,6 +47,7 @@ setTag(value){
   render() {
     return (
       <div>
+        {/* <Header /> */}
         <p className="intro">
         Whether you make art as a hobby or to make your living, we want you to be successful in your artistic endeavors.  These articles address some of the most frequent questions we hear from artists.
         </p>

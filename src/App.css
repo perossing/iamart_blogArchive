@@ -1,5 +1,6 @@
 .intro {
     width: 500px;
+    padding-top: 25px;
 }
 
 .articleName {
@@ -14,9 +15,10 @@
 
 .fullArticle {
     /* border: solid 1px #ccc; */
-    width: 500px;
+    width: 55%;
     padding: 25px;
-    display: inline-block;
+    float: left;
+    margin-bottom: 50px;
 }
 
 .author {
@@ -27,15 +29,15 @@
 
 .articleList {
     /* border: solid 1px #ccc; */
-    position: absolute;
-    top: 50px;
-    left: 575px;
-    height: 600px;
-    width: 375px;
+    /* position: absolute;
+    top: 50px; */
+    float: right;
+    /* height: 600px; */
+    width: 425px;
+    /* margin-right: 100px; */
 }
 
-.articleList h3,
-.tagList h3 {
+.articleList h3 {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 16px;
@@ -44,7 +46,7 @@
     width: 350px;
 }
 
-.tagCapsule {
+/* .tagCapsule {
     display: inline-block;
     background: #337AB7;
     color: #fff;
@@ -58,19 +60,21 @@
 
 .tagCapsule:hover {
     background: darkblue;
-}
+} */
 
-.articleTags {
+/* .articleTags { */
     /* border: solid 1px #ccc; */
     /* height: 150px; */
-    width: 350px;
+    /* width: 350px;
     position: absolute;
     top: 400px;
     left: 600px;
-}
+} */
 
 .articleFrame {
-    width: 520px;
-    height: 500px;
+    width: 100%;
+    height: 600px;
     border: none;
 }
+
+

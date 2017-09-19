@@ -106,6 +106,15 @@
             "tags": ["paper", "painting"],
             "image": "watercolor-paper-surfaces.jpg",
             "author": "David Freas"
+        },
+        {
+            "id": 14,
+            "title": "Selecting Brushes for Painting",
+            "subtitle": "Shape, Size, and Filament",
+            "content": "choosing-brushes.html",
+            "tags": ["brushes", "painting"],
+            "image": "paintbrushes.jpg",
+            "author": "Jolie Guillebeau"
         }
        
     ]

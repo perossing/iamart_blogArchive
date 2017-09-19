@@ -1,0 +1,260 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Assistant', sans-serif;
+  color: #111;
+}
+
+.header {
+  position: fixed;
+  width: 100%;
+  background: #fff;
+  z-index: 10;
+  box-shadow: 1px 1px 30px #ccd;
+}
+.navbar-header {
+  height: 110px;
+}
+.header .navbar {
+  margin: 0;
+  background: #fff;
+  border: none;
+}
+.nav-text {
+  font-size: 1.25em;
+  color: #2A3086;
+}
+.nav-text:hover {
+  color: #DE1B25;
+}
+.navbar-toggle {
+  background: #337AB7;
+  border: none;
+  margin-top: 1.5em;
+}
+.page-section {
+  width: 100%;
+  /*min-height: 600px;*/
+  padding: 30px 10px;
+  border-bottom: 2px dotted #EDF0F2;
+}
+
+h2 {
+  font-size: 2.1em;
+  font-weight: 700;
+  color: #2A3086;
+  margin: 1em 0 0.75em 0;
+}
+
+.iamart {
+  color: #2A3086;
+  font-weight: 700;
+  padding: 0 2px;
+  font-size: 1.1em;
+}
+.am {
+  color: #DE1B25;
+  text-transform: uppercase;
+  font-size: 0.98em;
+}
+
+.contrast-text {
+  color: #2A3086;
+  font-weight: 700;
+}
+
+.page-section p,
+.page-section ul {
+  font-size: 1.2em;
+  font-weight: 200;
+  margin: 1em 10% 1em 2%;
+}
+.page-section ul {
+  margin-left: 2.25em;
+}
+.image-container {
+  height: 250px;
+  width: 100%;
+}
+
+.intro-image {
+  background: url(../images/paint-palette.jpg) left;
+  background-size: cover;
+}
+
+.btn-info {
+  margin-top: 0.75em;
+  background: #337AB7;
+  font-size: 1em;
+}
+
+.stores-image, .brands-image {
+  margin: 0 auto;
+  height: 175px;
+  width: 95%;
+  border: 1px solid pink;
+}
+
+.stores-image {
+  margin-top: 20px;
+  background: url(../images/art-supply-displays.jpg) left;
+  background-size: cover;
+}
+
+.brands-image {
+  background: url(../images/art-supply-brands.jpg) left;
+  background-size: cover;
+}
+
+.country {
+  clear: both;
+  margin: 3em 0 1em 0;
+  background: #EDF0F2;
+  padding: 8px 0 8px 10px;
+}
+.store-listing {
+  margin: 0.5em 0 2em 0;
+  line-height: 1.7em;
+  font-size: 1.1em;
+}
+.state-name,
+.no-state-name {
+  background: #FFF55C;
+  width: 100%;
+  border-radius: 0 0 12px 0;
+  padding: 1px 0 2px 10px;
+  color: #111;
+  display: inline-block;
+  margin-bottom: 0.5em;
+  margin-left: -0.45em;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 0.9em;
+}
+.no-state-name:nth-child(1) {
+  margin-top: 1.45em;
+}
+.city {
+  color: #DE1B25;
+  font-weight: 700;
+  display: inline-block;
+  margin-bottom: 0.7em;
+}
+.store-name {
+  font-size: 1.1em;
+  font-weight: 700;
+  color:#2A3086;
+}
+.phone {
+  display: inline-block;
+  margin-top: 0.5em;
+}
+.store-listing a {
+  font-size: 1.05em;
+}
+
+.glyphicon-shopping-cart {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background: #DE1B25;
+  color: #fff;
+  text-align: center;
+  display: inline-block;
+  margin-left: 0.75em;
+  padding-top: 6px;
+  font-size: 0.8em;
+}
+
+.inline-cart-icon {
+  margin: 0 0.2em;
+}
+
+.btn {
+  font-weight: 200;
+}
+
+.back-to-top {
+  height: 40px;
+  width: 40px;
+  clear: both;
+  background: #99BEDE;
+  color: #fff;
+  margin-right: 2%;
+  border-radius: 50%;
+  padding-top: 10px;
+  text-align: center;
+  font-size: 20px;
+  float: right;
+  text-decoration: none;
+}
+.back-to-top:hover {
+  background: #62A4DE;
+  color: #fff;
+  border: solid 1px #eee;
+    text-decoration: none;
+}
+
+.footer {
+  background: #2A3086;
+  border: none;
+}
+
+.footer p {
+  color: #eee;
+  font-size: 0.97em;
+}
+
+
+@media (min-width: 950px) {
+  .store-locations {
+    max-width: 85%;
+  }
+}
+@media (min-width: 768px) {
+  .header .navbar-brand {
+    padding-left: 0;
+  }
+  .navbar-nav {
+    float: right;
+    margin-top: 2em;
+  }
+  .col-sm-4:nth-child(3n+1){
+    clear: left;
+  }
+}
+
+@media (max-width: 750px) {
+  .navbar-toggle {
+    margin-right: 0.25em;
+}
+  .country {
+    margin: 2.5em 0 -0.5em 0;
+  }
+  .store-listing {
+    margin-bottom: -1em;
+  }
+  .state-name,
+  .no-state-name {
+    max-width: 95%;
+  }
+  .state-name {
+    margin-top: 2.25em;
+    margin-left: -1em;
+  }
+  .no-state-name {
+    margin-top: 20px;
+  }
+  .city {
+    margin-left: -0.5em;
+  }
+}
+
+@media (max-width: 480px) {
+  .page-section p {
+    font-size: 1.1em;
+    margin-right: 0.5em;
+  }
+}
+
+
