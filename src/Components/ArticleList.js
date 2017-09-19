@@ -43,8 +43,9 @@ class ArticleList extends Component {
     }
 
     return (       
-      <div>
-        <ul className="scrollList">
+      <div className="articleList">
+        <h3>articles</h3>
+        <ul>
           {titleList}
         </ul>
       </div>

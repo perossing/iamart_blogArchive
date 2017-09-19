@@ -1,3 +1,7 @@
+.intro {
+    width: 500px;
+}
+
 .articleName {
     list-style-type: none;
     color: #c30;
@@ -15,14 +19,29 @@
     display: inline-block;
 }
 
-.scrollList {
-    border: solid 1px #ccc;
-    height: 150px;
-    width: 375px;
-    overflow-y: scroll;
+.author {
+    font-style: italic;
+    font-size: 0.75em;
+    margin-bottom: 20px;
+}
+
+.articleList {
+    /* border: solid 1px #ccc; */
     position: absolute;
     top: 50px;
-    left: 600px;
+    left: 575px;
+    height: 600px;
+    width: 375px;
+}
+
+.articleList h3,
+.tagList h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    background: #EDF0F2;
+    padding: 10px 5px;
+    width: 350px;
 }
 
 .tagCapsule {
@@ -48,4 +67,10 @@
     position: absolute;
     top: 400px;
     left: 600px;
+}
+
+.articleFrame {
+    width: 520px;
+    height: 500px;
+    border: none;
 }

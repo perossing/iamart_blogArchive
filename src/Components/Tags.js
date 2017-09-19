@@ -3,19 +3,30 @@ import React, { Component } from 'react';
 
 class Tag extends Component {
 
+  onClick(tagName) {
+    this.setState({
+      selectedTag: tagName
+    }, function () {
+      console.log(tagName);
+      // this.handleChange();
+    });
+  }
+  
+
   render(){  
+     var tagName = this.props.value;
       return (
-        <div className="tagCapsule">
-          {this.props.value}
+        <div className="tagCapsule" onClick={this.onClick.bind(this, tagName)}>
+          {tagName}
         </div>
       );
     }
+
   }
 
 
 
 class Tags extends Component {
-
 
   
     render(){
@@ -49,10 +60,11 @@ class Tags extends Component {
 
       }
         return (
-          <div>
-            <p>click a topic to filter articles by topic:</p>
-            {tagCapsules}
-          </div>
+            <div className="tagList">
+              <h3>categories</h3>
+              <p>click a topic to filter article list by category:</p>
+              {tagCapsules}
+            </div>
         );
       }
     }

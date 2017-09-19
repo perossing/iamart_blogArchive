@@ -12,7 +12,8 @@ constructor(props){
   this.changeArticle = this.changeArticle.bind(this);
   this.state = {
     articleData:{},
-    articleId: 1
+    articleId: 1,
+    selectedTag: ''
   }
 }
 
@@ -36,22 +37,26 @@ componentDidMount(){
 }
 
 changeArticle(value){
-  this.setState({articleId: value}, function(){
+  this.setState({articleId: value})
+}
+
+setTag(value){
+  this.setState({selectedTag: value}, function(){
+    console.log(value);
   });
 }
 
   render() {
     return (
       <div>
-        <p>
-            Intro text about iAMart and art materials articles ...
+        <p className="intro">
+        Whether you make art as a hobby or to make your living, we want you to be successful in your artistic endeavors.  These articles address some of the most frequent questions we hear from artists.
         </p>
-        {/* <Preview data={this.state.articleData.main} value={this.state.articleId}/>        */}
         <Article data={this.state.articleData.main} value={this.state.articleId}/>
         <br />
         <ArticleList data={this.state.articleData.main} value={this.state.articleId} onArticleSelection={this.changeArticle.bind(this)}/>
         <div className="articleTags">
-        <Tags data={this.state.articleData.main}/>
+        {/* <Tags data={this.state.articleData.main} onTagSelection={this.setTag.bind(this)}/> */}
         </div>
       </div>
     );
