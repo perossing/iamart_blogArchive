@@ -12,7 +12,7 @@ constructor(props){
   this.state = {
     articles:JSONData,
     articleId: 1,
-    selectedTag: ''
+    selectedTag: 'all'
   }
 }
 
@@ -20,10 +20,9 @@ changeArticle(id){
   this.setState({articleId: id})
 }
 
-setTag(category){
-  this.setState({selectedTag: category}, function(){
-    console.log(category);
-  });
+newTag(value){
+  this.setState({selectedTag: value})
+  // console.log(value);
 }
 
   render() {
@@ -31,9 +30,9 @@ setTag(category){
       <div>
         <Article articles={this.state.articles} id={this.state.articleId}/>
         <br />
-        <ArticleList articles={this.state.articles} id={this.state.articleId} onArticleSelection={this.changeArticle.bind(this)}/>
+        <ArticleList articles={this.state.articles} id={this.state.articleId} filter={this.state.selectedTag} onArticleSelection={this.changeArticle.bind(this)}/>
         <div className="articleTags">
-        <Tags data={this.state.articles}/>
+        <Tags data={this.state.articles} onTagSelection={this.newTag.bind(this)}/>
         </div>
       </div>
     );

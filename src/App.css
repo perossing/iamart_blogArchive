@@ -1,7 +1,8 @@
 .articleName {
     list-style-type: none;
     color: #337AB7;
-    line-height: 1.6em;
+    line-height: 1.1em;
+    padding: 5px 0;
 }
 
 .articleName:hover {
@@ -28,7 +29,7 @@
     top: 50px; */
     float: right;
     /* height: 600px; */
-    width: 425px;
+    width: 350px;
     /* margin-right: 100px; */
 }
 
@@ -42,17 +43,24 @@
     width: 350px;
 }
 
-.tagCapsule {
+.tagCapsule, .clear {
     display: inline-block;
-    background: #337AB7;
-    color: #fff;
+    background: #337AB7;    
     height: 25px;
     width: 100px;
     border-radius: 20px;
     text-align: center;
-    padding-top: 5px;
+    padding-top: 1px;
     margin: 5px;
 }
+
+.clear {
+    background: #DE1B25;
+    display: block;
+    width: 175px;
+    margin: 10px auto;
+}
+
 
 .tagCapsule:hover {
     background: darkblue;
@@ -60,10 +68,10 @@
 
 .articleTags {
     /* border: solid 1px #ccc; */
-    height: 150px;
+    /* height: 150px; */
     width: 350px;
     float: right;
-    width: 425px;
+    /* width: 425px; */
     /* position: absolute;
     top: 400px;
     left: 600px; */
@@ -75,4 +83,12 @@
     border: none;
 }
 
+.highlight {
+    font-weight: bold;
+    background: #FFF55C;
+}
+
+.white {
+    color: #fff;
+}
 

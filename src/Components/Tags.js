@@ -1,32 +1,31 @@
 import React, { Component } from 'react';
 
-class Tag extends Component {
+const Tag = (props) => {
+    return (
+      <div className="white">{props.value}</div>
+    )  
+}
 
-  onClick(tagName) {
-    this.setState({
-      selectedTag: tagName
-    }, function () {
-      console.log(tagName);
-      // this.handleChange();
+class Tags extends Component {
+  constructor(props){
+    super(props);
+
+    this.state = {
+        selectedTag: ''
+    }       
+}
+
+  changeTag(event){
+    this.setState({selectedTag: event.target.innerHTML}, () => {
+      this.props.onTagSelection(this.state.selectedTag);
     });
-  }  
-
-  render(){    
-     var tagName = this.props.value;
-      return (
-        <div className="tagCapsule" onClick={this.onClick.bind(this, tagName)}>
-          {tagName}
-        </div>
-      );
-    }
   }
 
-const Tags = (props) => {
- 
-  // if(this.props.data){
-    let articles = props.data;
+  render() {
 
-    //get 2d array of tags from all articles
+    let articles = this.props.data;    
+
+    //get 2D array of tags from all articles
     let tagArrays=[];
     articles.map((article, i)=>{
       tagArrays.push(article.tags);
@@ -47,19 +46,29 @@ const Tags = (props) => {
     //convert set to object & alphabetize
     let tags = Array.from(tagSet).sort();
 
-    var tagCapsules = tags.map((tag, i)=>{
-      return <Tag key={i} value={tag}/>
-    });
+    tags.push('clear highlights');
 
-  // }
-    return (
-        <div className="tagList">
-          <h3>categories</h3>
-          <p>click a topic to filter article list by category:</p>
-          {tagCapsules}
-        </div>
-    );
-}    
+    let capsule;
+    let capsuleClass="tagCapsule";
+    var tagCapsules = tags.map((tag, i)=>{
+      if (tag === "clear highlights"){
+        capsuleClass = "clear"
+      }
+      capsule = <div className={capsuleClass} key={i} onClick={this.changeTag.bind(this)}><Tag value={tag}/></div>
+      return capsule;
+    });
+    
+      return (
+          <div className="tagList">
+            <h3>categories</h3>
+            <p>click a topic to highlight articles by category:</p>
+            <div>{tagCapsules}</div>
+          </div>
+        )
+      }
+  }
+
+
   
   export default Tags;
 

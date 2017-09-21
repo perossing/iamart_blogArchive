@@ -1,19 +1,18 @@
 import React from 'react';
 
-let Article = (props) => {
+const Article = (props) => {
 
-        let current = props.articles.filter((item)=>{
+        const current = props.articles.filter((item)=>{
             return item.id === props.id;
         });
 
-        let article = current[0]
-
-        let title = article.title;
-        let subtitle = article.subtitle;
-        let image = 'images/'+ article.image;
-        let imageName = article.image
-        let content = 'articletext/' + article.content;
-        let author = article.author;
+        const article = current[0];
+        const title = article.title;
+        const subtitle = article.subtitle;
+        const image = 'images/'+ article.image;
+        const imageName = article.image
+        const content = 'articletext/' + article.content;
+        const author = article.author;
   
       return (
         <div className="fullArticle">
