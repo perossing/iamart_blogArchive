@@ -7,7 +7,7 @@ The organization has no plans to update content as an ongoing blog, so data is p
 Completed page will use design of current iAMart.org page in a typical blog format with a list of articles to select, article snippets to preview, and tags to select article categories.
 
 
-*current status as of 9/20/17:*
+*current status as of 9/21/17:*
 - Main article page set up to display article info & content.
 - Article list shows article titles from sample data.
 - Selection of a title loads new content.
@@ -18,3 +18,11 @@ Completed page will use design of current iAMart.org page in a typical blog form
 - change article content to links in JSON file, moved content to html files to load into iframe & get rid of innerHTML
 - started apply design/styling of original website to index
 - cleaned up & simplified code, putting tags back in
+- tags display highlighting on appropriate titles in list
+- clear highlights button
+
+To Do:
+- look for places to clean up code
+- clean up styling
+- fix responsive layout to conform to bootstrap columns of original site
+- add remaining data for articles & change tags/categories to make more sense
