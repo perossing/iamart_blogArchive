@@ -1,61 +1,39 @@
 import React, { Component } from 'react';
-import $ from 'jquery';
 import './App.css';
 import Article from './Components/Article';
 import ArticleList from './Components/ArticleList';
+import JSONData from './AM-articles.json';
+import Tags from './Components/Tags';
 
 class App extends Component {
 constructor(props){
   super(props);
-  this.changeArticle = this.changeArticle.bind(this);
+
   this.state = {
-    articleData:{},
+    articles:JSONData,
     articleId: 1,
     selectedTag: ''
   }
 }
 
-getArticles(){
-  $.ajax({
-    url:'AM-articles.json',
-    dataType: 'json',
-    cache: false,
-    success: function(data){
-      this.setState({articleData: data});      
-    }.bind(this),
-    error: function(xhr, status, err){
-      console.log(err);
-      alert(err);
-    }
-  });
+changeArticle(id){
+  this.setState({articleId: id})
 }
 
-componentDidMount(){
-  this.getArticles();
-}
-
-changeArticle(value){
-  this.setState({articleId: value})
-}
-
-setTag(value){
-  this.setState({selectedTag: value}, function(){
-    console.log(value);
+setTag(category){
+  this.setState({selectedTag: category}, function(){
+    console.log(category);
   });
 }
 
   render() {
     return (
       <div>
-        {/* <Header /> */}
-        <p className="intro">
-        Whether you make art as a hobby or to make your living, we want you to be successful in your artistic endeavors.  These articles address some of the most frequent questions we hear from artists.
-        </p>
-        <Article data={this.state.articleData.main} value={this.state.articleId}/>
+        <Article articles={this.state.articles} id={this.state.articleId}/>
         <br />
-        <ArticleList data={this.state.articleData.main} value={this.state.articleId} onArticleSelection={this.changeArticle.bind(this)}/>
+        <ArticleList articles={this.state.articles} id={this.state.articleId} onArticleSelection={this.changeArticle.bind(this)}/>
         <div className="articleTags">
-        {/* <Tags data={this.state.articleData.main} onTagSelection={this.setTag.bind(this)}/> */}
+        <Tags data={this.state.articles}/>
         </div>
       </div>
     );

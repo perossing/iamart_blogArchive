@@ -1,3 +1,10 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Assistant', sans-serif;
+    color: #111;
+    font-size: 1.15em;
+    line-height: 1.3em;
+}
+
+strong {
+    color: #2A3086;
 }

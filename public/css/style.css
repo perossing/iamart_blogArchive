@@ -1,3 +1,12 @@
+/* ADDITIONS TO ORIGINAL: */
+
+.intro {
+  padding-top: 25px;
+}
+
+
+
+
 * {
   margin: 0;
   padding: 0;
@@ -204,6 +213,7 @@ h2 {
   color: #eee;
   font-size: 0.97em;
 }
+
 
 
 @media (min-width: 950px) {

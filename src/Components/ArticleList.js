@@ -3,20 +3,15 @@ import React, { Component } from 'react';
 class ArticleList extends Component {
   constructor(props){
     super(props);
-    this.handleChange = this.handleChange.bind(this);
+
     this.state = {
-        articleNumber: props.value
+        articleId: props.value
     }
   }
 
   onClick(articleId){
-      this.setState({articleNumber: articleId}, function(){
-        this.handleChange();
-     });
-  }
-
-  handleChange(){
-    this.props.onArticleSelection(this.state.articleNumber);
+      this.setState({articleId});
+      this.props.onArticleSelection(articleId);
   }
 
   render() {
@@ -26,21 +21,19 @@ class ArticleList extends Component {
       return 0
     }
 
-    if(this.props.data){ 
-      let articles = this.props.data;
-      let titles = [];
-        for (let i=0; i<Object.keys(articles).length; i++){
-          titles[i] = {}
-          titles[i].id=(articles[i].id)
-          titles[i].title=(articles[i].title)
-        }
-      let sortedTitles = titles.sort(sortByTitle);
-      let articleId;
-      var titleList = sortedTitles.map((article, i)=>{
-        articleId = article.id;
-        return <li key={i} className="articleName" onClick={this.onClick.bind(this, articleId)}>{article.title}</li>
-      });
-    }
+    let articles = this.props.articles;
+    let titles = [];
+      for (let i=0; i<Object.keys(articles).length; i++){
+        titles[i] = {}
+        titles[i].id=(articles[i].id)
+        titles[i].title=(articles[i].title)
+      }
+    let sortedTitles = titles.sort(sortByTitle);
+    let articleId;
+    var titleList = sortedTitles.map((article, i)=>{
+      articleId = article.id;
+      return <li key={i} className="articleName" onClick={this.onClick.bind(this, articleId)}>{article.title}</li>
+    });
 
     return (       
       <div className="articleList">

@@ -1,22 +1,17 @@
-.intro {
-    width: 500px;
-    padding-top: 25px;
-}
-
 .articleName {
     list-style-type: none;
-    color: #c30;
+    color: #337AB7;
     line-height: 1.6em;
 }
 
 .articleName:hover {
-    color: skyblue;
+    color: #DE1B25;
 }
 
 .fullArticle {
     /* border: solid 1px #ccc; */
-    width: 55%;
-    padding: 25px;
+    width: 50%;
+    padding-left: 25px;
     float: left;
     margin-bottom: 50px;
 }
@@ -37,7 +32,8 @@
     /* margin-right: 100px; */
 }
 
-.articleList h3 {
+.articleList h3,
+.tagList h3 {
     text-transform: uppercase;
     font-weight: normal;
     font-size: 16px;
@@ -46,7 +42,7 @@
     width: 350px;
 }
 
-/* .tagCapsule {
+.tagCapsule {
     display: inline-block;
     background: #337AB7;
     color: #fff;
@@ -60,16 +56,18 @@
 
 .tagCapsule:hover {
     background: darkblue;
-} */
+}
 
-/* .articleTags { */
+.articleTags {
     /* border: solid 1px #ccc; */
-    /* height: 150px; */
-    /* width: 350px;
-    position: absolute;
+    height: 150px;
+    width: 350px;
+    float: right;
+    width: 425px;
+    /* position: absolute;
     top: 400px;
-    left: 600px;
-} */
+    left: 600px; */
+}
 
 .articleFrame {
     width: 100%;
