@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 
 const Tag = (props) => {
+
     return (
       <div className="white">{props.value}</div>
     )  
@@ -60,8 +61,8 @@ class Tags extends Component {
     
       return (
           <div className="tagList">
-            <h3>categories</h3>
-            <p>click a topic to highlight articles by category:</p>
+            <h3>topics</h3>
+            <p className="instructions">click a topic to highlight articles by category:</p>
             <div>{tagCapsules}</div>
           </div>
         )

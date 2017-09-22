@@ -48,6 +48,7 @@ class ArticleList extends Component {
     return (       
       <div className="articleList">
         <h3>articles</h3>
+        <p className="instructions">click a title to select an article:</p>
         <ul>
           {titleList}
         </ul>

@@ -16,8 +16,8 @@ const Article = (props) => {
   
       return (
         <div className="fullArticle">
-          <h1>{title}</h1>
-          <h3>{subtitle}</h3>
+          <h1 className="title">{title}</h1>
+          <h3 className="subtitle">{subtitle}</h3>
           <img src={image} alt={imageName} />
           <p className="author">author: {author}</p>
           <iframe className="articleFrame" src={content} title="articles"></iframe>

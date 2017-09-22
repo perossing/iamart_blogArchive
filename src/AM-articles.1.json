@@ -1,10 +1,10 @@
 [
     {
         "id": 2,
-        "title": "Selecting Drawing Pencils",
+        "title": "Selecting Pencils for Drawing and Sketching",
         "subtitle": "Knowing how to interpret the 'H', 'B', and numbers on pencils can help you choose the right pencils for your art",
         "content": "selecting-pencils.html",
-        "tags": ["drawing"],
+        "tags": ["drafting", "drawing", "graphite", "pencils", "sketching"],
         "image": "pencil-grades.jpg",
         "author": "David Freas"
     },
@@ -13,7 +13,7 @@
         "title": "All About Erasers - part 1",
         "subtitle": "Pink and White",
         "content": "erasers-pink-white.html",
-        "tags": ["drawing"],
+        "tags": ["charcoal", "drafting", "drawing", "graphite"],
         "image": "pink-white-erasers.jpg",
         "author": "David Freas"
     },
@@ -22,7 +22,7 @@
         "title": "All About Erasers - part 2",
         "subtitle": "Gum Erasers",
         "content": "erasers-gum.html",
-        "tags": ["drawing"],
+        "tags": ["drafting", "drawing", "graphite"],
         "image": "artgum-eraser.jpg",
         "author": "David Freas"
     },
@@ -31,7 +31,7 @@
         "title": "All About Erasers - part 3",
         "subtitle": "Kneaded Erasers",
         "content": "erasers-kneaded.html",
-        "tags": ["drawing"],
+        "tags": ["charcoal", "drawing", "graphite"],
         "image": "kneaded-erasers.jpg",
         "author": "David Freas"
     },
@@ -40,25 +40,25 @@
         "title": "White Paints and Pigments",
         "subtitle": "Zinc, Titanium, or Flake",
         "content": "white-paints.html",
-        "tags": ["painting"],
+        "tags": ["oils", "paints", "pigments"],
         "image": "",
         "author": "David Freas"
     },
     {
         "id": 6,
-        "title": "Different Forms of Charcoal",
+        "title": "Different Kinds of Charcoal",
         "subtitle": "Powdered, Compressed, Willow, and Vine",
         "content": "charcoal.html",
-        "tags": ["drawing"],
+        "tags": ["charcoal", "drawing"],
         "image": "charcoal.jpg",
         "author": "David Freas"
     },
     {
         "id": 7,
-        "title": "How Dangerous is Oil Paint?",
+        "title": "How Dangerious is Oil Paint",
         "subtitle": "Facts and Considerations",
         "content": "how-dangerous-is-oil-paint.html",
-        "tags": ["painting"],
+        "tags": ["oils", "painting", "pigments"],
         "image": "oil-toxicity.jpg",
         "author": "David Freas"
     },
@@ -101,7 +101,7 @@
     {
         "id": 13,
         "title": "Watercolor Paper - part 1",
-        "subtitle": "Surface Textures",
+        "subtitle": "Surfaces",
         "content": "watercolor-paper-surfaces.html",
         "tags": ["paper", "painting"],
         "image": "watercolor-paper-surfaces.jpg",
@@ -112,53 +112,8 @@
         "title": "Selecting Brushes for Painting",
         "subtitle": "Shape, Size, and Filament",
         "content": "choosing-brushes.html",
-        "tags": ["painting"],
+        "tags": ["brushes", "painting"],
         "image": "paintbrushes.jpg",
         "author": "Jolie Guillebeau"
-    },
-    {
-        "id": 15,
-        "title": "Watercolor Paper - part 2",
-        "subtitle": "Weights",
-        "content": "watercolor-paper-weights.html",
-        "tags": ["painting", "paper"],
-        "image": "watercolor-paper-weights.jpg",
-        "author": "David Freas"
-    },
-    {
-        "id": 19,
-        "title": "Choosing a Sketchbook - part 4",
-        "subtitle": "Sizes",
-        "content": "choosing-sketchbook-sizes.html",
-        "tags": ["drawing", "paper"],
-        "image": "sketchbook-stack.jpg",
-        "author": "David Freas"
-    },
-    {
-        "id": 18,
-        "title": "Choosing a Sketchbook - part 3",
-        "subtitle": "Binding",
-        "content": "choosing-sketchbook-binding.html",
-        "tags": ["drawing", "paper"],
-        "image": "sketchbook-bindings.jpg",
-        "author": "David Freas"
-    },
-    {
-        "id": 17,
-        "title": "Choosing a Sketchbook - part 2",
-        "subtitle": "Paper Type and Quality",
-        "content": "choosing-sketchbook-paper.html",
-        "tags": ["drawing", "paper"],
-        "image": "sketchbook-covers.jpg",
-        "author": "David Freas"
-    },
-    {
-        "id": 8,
-        "title": "Choosing a Sketchbook - part 1",
-        "subtitle": "Paper Surface and Weight",
-        "content": "choosing-sketchbook-surfaces.html",
-        "tags": ["drawing", "paper"],
-        "image": "sketchbook-shelves.jpg",
-        "author": "David Freas"
     }
 ]
