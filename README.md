@@ -25,4 +25,4 @@ To Do:
 - look for places to clean up code
 - clean up styling
 - fix responsive layout to conform to bootstrap columns of original site
-- add remaining data for articles & change tags/categories to make more sense
+- ~~add remaining data for articles & change tags/categories to make more sense~~
