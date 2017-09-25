@@ -63,13 +63,11 @@ class Tags extends Component {
           <div className="tagList">
             <h3>topics</h3>
             <p className="instructions">click a topic to highlight articles by category:</p>
-            <div>{tagCapsules}</div>
+            <div className="capsules">{tagCapsules}</div>
           </div>
         )
       }
   }
-
-
   
   export default Tags;
 

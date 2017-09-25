@@ -1,8 +1,10 @@
 body {
     font-family: 'Assistant', sans-serif;
     color: #111;
-    font-size: 1.15em;
+    font-size: 1.1em;
     line-height: 1.3em;
+    padding-right: 30px;
+    text-align: justify;
 }
 
 strong {

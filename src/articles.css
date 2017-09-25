@@ -1,0 +1,161 @@
+.title {
+    text-transform: lowercase;
+    margin-bottom: -10px;
+}
+
+.subtitle {
+    color: #2A3086; 
+    margin-bottom: 30px;
+    text-transform: lowercase;
+}
+
+.articlePic {
+    width: 100%;
+    max-width: 500px;
+}
+
+.articleFrame {
+    width: 100%;
+    min-height: 250px;
+    max-height: 600px;
+    border: none;
+}
+
+.author {
+    font-style: italic;
+    font-size: 0.75em;
+}
+
+.selections {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.articleList,
+.articleTags {
+    display: block;
+    min-width: 300px;
+    max-width: 350px;
+    margin: 0 auto;
+}
+
+.articleList h3,
+.tagList h3 {
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 16px;
+    background: #EDF0F2;
+    padding: 10px 5px;
+    max-width: 300px;
+}
+
+.tagList h3 {
+    margin-top: 50px;
+}
+
+.articleName {
+    list-style-type: none;
+    margin-left: -15px;
+    color: #2A3086;
+    line-height: 1.1em;
+    padding: 5px 0;
+    border-bottom: 1px solid #8DC4F1;
+}
+
+.articleName:hover {
+    color: #DE1B25;
+}
+
+.capsules {
+    width: 290px;
+    display: block;
+}
+
+.tagCapsule, .clear {
+    display: inline-block;
+    background: #337AB7;    
+    height: 25px;
+    width: 85px;
+    border-radius: 20px;
+    text-align: center;
+    padding-top: 1px;
+    margin: 5px;
+}
+
+.clear {
+    background: #DE1B25;
+    display: block;
+    width: 125px;
+    margin: 10px auto;
+}
+
+.tagCapsule:hover {
+    background: #2A3086;
+}
+
+.highlight {
+    font-weight: bold;
+    background: #FFF55C;
+    border-bottom: 1px solid #fff;
+    border-radius: 0 0 12px 0;
+}
+
+.white {
+    color: #fff;
+}
+
+.instructions{
+    color: #337AB7;
+}
+
+.more-info {
+    color: #337AB7;
+    font-style: italic;
+}
+
+@media (min-width: 480px) {
+    .fullArticle {
+      width: 90%;
+  }
+}
+
+
+@media (min-width: 750px) {
+    .selections {
+        max-width: 670px;
+    }
+    .articleList,
+    .articleTags {
+        display: inline-block;
+        margin: 0 5px;
+        vertical-align: top;
+    }
+    .tagList h3 {
+        margin-top: 20px;;
+    }
+}
+
+@media (min-width: 850px) {
+    .article-page {
+        max-width: 1000px;
+        display: block;
+        margin: 0 auto;
+    }
+    .articleFrame {
+        height: 600px;
+    }
+    .fullArticle {
+        width: 55%;
+        margin-left: 30px;
+        float: left;
+    }
+    .selections {
+        width: 40%;
+        max-width: 350px;
+        float: right;
+    }
+    .more-info {
+        display: none;
+    }
+}
+

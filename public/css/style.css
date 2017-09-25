@@ -1,11 +1,9 @@
 /* ADDITIONS TO ORIGINAL: */
 
-.intro {
-  padding-top: 25px;
+.page-section {
+  display: block;
+  overflow: auto;
 }
-
-
-
 
 * {
   margin: 0;
@@ -43,7 +41,6 @@
 }
 .page-section {
   width: 100%;
-  /*min-height: 600px;*/
   padding: 30px 10px;
   border-bottom: 2px dotted #EDF0F2;
 }
