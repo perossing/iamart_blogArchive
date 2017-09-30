@@ -41,7 +41,7 @@
         "subtitle": "Zinc, Titanium, or Flake",
         "content": "white-paints.html",
         "tags": ["painting"],
-        "image": "",
+        "image": "degas-white.jpg",
         "author": "David Freas"
     },
     {
@@ -68,7 +68,7 @@
         "subtitle": "What They are and When to Use Them",
         "content": "paints-artist-v-student-grade.html",
         "tags": ["painting"],
-        "image": "",
+        "image": "student-v-artist.jpg",
         "author": "David Freas"
     },
     {
@@ -94,7 +94,7 @@
         "title": "What is Vellum?",
         "subtitle": "A Term with Different Meanings...",
         "content": "what-is-vellum.html",
-        "tags": ["paper", "drawing"],
+        "tags": ["surfaces", "drawing"],
         "image": "vellum.jpg",
         "author": "David Freas"
     },
@@ -103,7 +103,7 @@
         "title": "Watercolor Paper - part 1",
         "subtitle": "Surface Textures",
         "content": "watercolor-paper-surfaces.html",
-        "tags": ["paper", "painting"],
+        "tags": ["surfaces", "painting"],
         "image": "watercolor-paper-surfaces.jpg",
         "author": "David Freas"
     },
@@ -121,34 +121,34 @@
         "title": "Watercolor Paper - part 2",
         "subtitle": "Weights",
         "content": "watercolor-paper-weights.html",
-        "tags": ["painting", "paper"],
+        "tags": ["painting", "surfaces"],
         "image": "watercolor-paper-weights.jpg",
         "author": "David Freas"
     },
     {
-        "id": 19,
+        "id": 18,
         "title": "Choosing a Sketchbook - part 4",
         "subtitle": "Sizes",
         "content": "choosing-sketchbook-sizes.html",
-        "tags": ["drawing", "paper"],
+        "tags": ["drawing", "surfaces"],
         "image": "sketchbook-stack.jpg",
         "author": "David Freas"
     },
     {
-        "id": 18,
+        "id": 17,
         "title": "Choosing a Sketchbook - part 3",
         "subtitle": "Binding",
         "content": "choosing-sketchbook-binding.html",
-        "tags": ["drawing", "paper"],
+        "tags": ["drawing", "surfaces"],
         "image": "sketchbook-bindings.jpg",
         "author": "David Freas"
     },
     {
-        "id": 17,
+        "id": 16,
         "title": "Choosing a Sketchbook - part 2",
         "subtitle": "Paper Type and Quality",
         "content": "choosing-sketchbook-paper.html",
-        "tags": ["drawing", "paper"],
+        "tags": ["drawing", "surfaces"],
         "image": "sketchbook-covers.jpg",
         "author": "David Freas"
     },
@@ -157,8 +157,17 @@
         "title": "Choosing a Sketchbook - part 1",
         "subtitle": "Paper Surface and Weight",
         "content": "choosing-sketchbook-surfaces.html",
-        "tags": ["drawing", "paper"],
+        "tags": ["drawing", "surfaces"],
         "image": "sketchbook-shelves.jpg",
+        "author": "David Freas"
+    },
+    {
+        "id": 19,
+        "title": "Paints: Pigment Codes",
+        "subtitle": "how to know what your colors are made from",
+        "content": "paints-pigment-codes.html",
+        "tags": ["painting"],
+        "image": "pigment-codes.jpg",
         "author": "David Freas"
     }
 ]

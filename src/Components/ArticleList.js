@@ -1,16 +1,8 @@
 import React, { Component } from 'react';
 
 class ArticleList extends Component {
-  // constructor(props){
-  //   super(props);
-
-  //   this.state = {
-  //       // articleId: '',
-  //   }
-  // }
 
   onClick(articleId){
-      // this.setState({articleId});
       this.props.onArticleSelection(articleId);
   }
 
