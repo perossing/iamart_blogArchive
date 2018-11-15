@@ -1,25 +1,7 @@
 ## Art-materials info archive for iAMart.org
 
-Using React to set up archived blog articles from previous site on an 'Articles' page for iAMart.org (Independent Art Materials Retail Marketing Co-Op).
+**React** version of archived blog articles from iAMart.org (Independent Art Materials Retail Marketing Co-Op).
 
-The organization has no plans to update content as an ongoing blog, so data is pulled from a JSON file.
+Content is pulled from a JSON file.
 
-Completed page will use design of current iAMart.org page in a typical blog format with a list of articles to select, article snippets to preview, and tags to select article categories.
-
-
-*current status as of 9/25/17:*
-- Main article page set up to display article info & content.
-- Article list shows article titles from sample data.
-- Selection of a title loads new content.
-- Title list alphabetized & displays correct article by index.
-- ~~Component to display article preview summaries started~~
-- Tags component finds tag info from all articles, makes set of tags and displays 'capsules' with tag names
-- simplified to drop category tags & preview page (too few articles for extra clutter & UI)
-- change article content to links in JSON file, moved content to html files to load into iframe & get rid of innerHTML
-- started apply design/styling of original website to index
-- cleaned up & simplified code, putting tags back in
-- tags display highlighting on appropriate titles in list
-- clear highlights button
-
-To Finish:
-- integrate react section with original page
+This page was part of the current live website, I've replaced it with a page & site built with Hugo.
