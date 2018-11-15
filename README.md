@@ -6,4 +6,4 @@ Content is pulled from a JSON file.
 
 View project at https://iamart-am-archive.netlify.com/
 
-*This page was part of the current live website* https://www.iamart.org/ /   *I've replaced this React version with a page & site built with Hugo.*
+*This page was part of the current live website: https://www.iamart.org/  *I've replaced this React version with a page & site built with Hugo.*
