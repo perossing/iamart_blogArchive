@@ -4,4 +4,4 @@
 
 Content is pulled from a JSON file.
 
-This page was part of the current live website, I've replaced it with a page & site built with Hugo.
+This page was part of the current live website, at https://www.iamart.org/ /   I've replaced this React version with a page & site built with Hugo.
